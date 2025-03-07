@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from Spacewar device
-$(call inherit-product, device/nothing/spacewar/device.mk)
+$(call inherit-product, device/nothing/Spacewar/device.mk)
 
 PRODUCT_DEVICE := Spacewar
 PRODUCT_NAME := twrp_Spacewar
