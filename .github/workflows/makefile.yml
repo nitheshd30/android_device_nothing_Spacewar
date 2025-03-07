@@ -20,6 +20,7 @@ on:
         - twrp-12.1
         - twrp-11
         - 12.1
+        - 14.1
         - shrp-12.1
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
