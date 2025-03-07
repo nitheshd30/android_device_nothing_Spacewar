@@ -10,6 +10,7 @@ on:
         options:
         - https://github.com/nitheshd30/SHRP_Manifest.git
         - https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+        - https://gitlab.com/OrangeFox/sync.git
       MANIFEST_BRANCH:
         description: 'Manifest Branch'
         required: true
@@ -18,6 +19,7 @@ on:
         options:
         - twrp-12.1
         - twrp-11
+        - 12.1
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
@@ -172,7 +174,7 @@ jobs:
       uses: ncipollo/release-action@v1.11.1
       with:
         artifacts: workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/SHRP-${{ github.event.inputs.MANIFEST_BRANCH }}-${{ github.event.inputs.DEVICE_NAME }}-${{ steps.props.outputs.date }}.img
-        name: Unofficial-Alpha SHRP for ${{ github.event.inputs.DEVICE_NAME }} - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
+        name: Unofficial-Alpha TWRP for ${{ github.event.inputs.DEVICE_NAME }} - Build ${{ steps.props.outputs.date }} / ${{ github.run_id }}
         draft: false
         prerelease: true
         tag: ${{ github.run_id }}-${{ steps.props.outputs.date }}
