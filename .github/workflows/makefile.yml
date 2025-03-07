@@ -51,7 +51,7 @@ on:
         type: choice
         options:
         - twrp_Spacewar
-        - omni_Infinix-X6812
+        - omni_Spacewar
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
