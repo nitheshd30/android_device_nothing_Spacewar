@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/nitheshd30/twrp_tree_spacewar'
+        default: 'https://github.com/nitheshd30/android_device_nothing_Spacewar.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'master'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
